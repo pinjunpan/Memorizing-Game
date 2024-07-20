@@ -1,0 +1,135 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.card {
+  /* 1. 卡片在牌桌上的排版 */
+  /* 每個 item 分配容器寬度 */
+  /* flex-basis, flex-grow, flex-shrink */
+  flex: 7% 1 1;
+  /* 依視窗的寬度等比例變化 */
+  /* 視窗大小的8% */
+  height: 8vw;
+  border: 2px solid #e0e0e0;
+  margin: 2px;
+  box-sizing: border-box;
+
+  /* 2. 卡片內部元件排版 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card img {
+  max-width: 30%;
+  align-self: center;
+}
+
+.card p {
+  margin: 3px;
+  font-size: 10px;
+}
+
+.card p:last-child {
+  transform: rotate(180deg);
+}
+
+.back {
+  background: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/9222/ExportedContentImage_00.png");
+  background-size: cover;
+}
+
+.paired {
+  background-color: #dae0e3;
+}
+
+#header {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 85%;
+}
+
+#header .title {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+#header img {
+  max-width: 3em;
+}
+
+#header h2 {
+  padding-left: 0.5em;
+}
+
+#header .score {
+  margin: 0;
+  color: #6c90ac;
+}
+
+#header .tried {
+  margin-top: 0;
+}
+
+.completed {
+  position: absolute;
+  top: 33%;
+  z-index: 100;
+  background-color: lightblue;
+  width: 100vw;
+  padding: 50px 0;
+  animation-name: completed;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.completed>p {
+  font-size: 20px;
+  text-align: center;
+  color: darkblue;
+  margin: 0;
+}
+
+.completed>p:first-child {
+  font-size: 36px;
+  font-weight: 700;
+  color: black;
+}
+
+.wrong {
+  animation-name: wrongAnimation;
+  animation-duration: 0.2s;
+  /* 0.2sec */
+  animation-iteration-count: 5;
+  /* 5 times */
+}
+
+/* 動畫：關鍵影格 */
+@keyframes wrongAnimation {
+
+  /* 設起始影格 */
+  to {
+    border: 2px solid #f1c232
+  }
+}
+
+@keyframes completed {
+  from{
+    border: 2px solid lightcoral
+  }
+  to {
+    border: 2px solid #f1c232
+  }
+}
