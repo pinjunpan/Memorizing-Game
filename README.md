@@ -1,5 +1,5 @@
 # Memorizing Game
-<img width="941" alt="main" src="https://github.com/user-attachments/assets/395ffd5a-ae44-40a9-a56d-902d0c40234a" />
+<img width="942" alt="main" src="https://github.com/user-attachments/assets/c8582e5b-e16e-4f37-965d-834bc09c0b01" />
 <img width="947" alt="complete" src="https://github.com/user-attachments/assets/f54e309d-db7c-4e4c-a04e-21143e4d3cde" />
 
 ## Features
