@@ -1,5 +1,6 @@
 # Memorizing Game
-<img  />
+<img width="941" alt="main" src="https://github.com/user-attachments/assets/395ffd5a-ae44-40a9-a56d-902d0c40234a" />
+<img width="947" alt="complete" src="https://github.com/user-attachments/assets/f54e309d-db7c-4e4c-a04e-21143e4d3cde" />
 
 ## Features
 - 設計翻牌配對遊戲，使用 MVC 架構管理
